@@ -2,7 +2,7 @@ package Messages;
 
 //The base class for all messages
 public abstract class MessagesB {
-    // geparator string used for serializing and deserializing messages
+    // separator string used for serializing and deserializing messages
     public static final String SERIALIZATION_SEPARATOR = ":";
 
     protected String message;

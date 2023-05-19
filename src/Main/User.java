@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.net.UnknownHostException;
 
 public class User implements Runnable {
     private Socket socket;
@@ -93,8 +94,14 @@ public class User implements Runnable {
     }
 
     //The main method for creating a new User object and starting it as a new thread.
-    public static void main(String[] args) {
-        User user = new User();
-        user.run();
+    public static void main() {
+        try {
+            User user = new User("", new Socket("127.0.0.1", 9999));
+            user.run();
+        } catch(UnknownHostException e) {
+            System.out.println("");
+        } catch(IOException e) {
+            System.out.println("");
+        }
     }
 }

@@ -15,16 +15,12 @@ import java.net.Socket;
 public class Connection implements Runnable {
     private final Server server;
     private final Socket socket;
-    private final String userName;
     private BufferedReader in;
     private PrintWriter out;
     private String displayName;
-    private Connection user;
 
-    public Connection(Server server, Socket socket, String userName, Connection user) {
+    public Connection(Server server, Socket socket) {
         this.server = server;
-        this.user = user;
-        this.userName = userName;
         this.socket = socket;
     }
 
@@ -45,8 +41,8 @@ public class Connection implements Runnable {
             sendMessage(new ServerMessages("You have successfully connected to the server."));
 
             // Initializes Naming and Command handlers
-            Names namingHandler = new Names(server, userName);
-            Commandhandler commandHandler = new Commandhandler(server, userName, user);
+            Names namingHandler = new Names();
+            Commandhandler commandHandler = new Commandhandler(server, this);
 
             // Get valid username and log user's connection to the server
             displayName = namingHandler.getValidName();

@@ -21,12 +21,12 @@ public class DeserializingMessages {
     private static DeserializedMessages deserializeUserMessages(String message) {
 
         //Splits the message using a separator and extracts the length of the username
-        String[] messageData = message.split(MessagesB.SERIALIZATION_SEPARATOR, 3);
+        String[] messageData = message.split(MessagesB.SERIALIZATION_SEPARATOR, 0);
         int nameLength = Integer.parseInt(messageData[1]);
 
         //Calculates the starting index of the username within the message string
         int nameLengthNumDigits = (int)(Math.log10(nameLength) + 1);
-        int nameStartIndex = 6 + 2 * MessagesB.SERIALIZATION_SEPARATOR.length() + nameLengthNumDigits;
+        int nameStartIndex = 6 * MessagesB.SERIALIZATION_SEPARATOR.length() + nameLengthNumDigits;
 
         //Extracts the username and content from the message string and creates a new DeserializedMessages object with them
         String name = message.substring(nameStartIndex, nameStartIndex + nameLength);

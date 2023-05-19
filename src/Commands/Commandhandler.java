@@ -1,7 +1,6 @@
 package Commands;
 
 import Main.Connection;
-import Main.Names;
 import Main.Server;
 import Messages.ServerMessages;
 
@@ -20,19 +19,11 @@ public class Commandhandler {
     // The user's connection handler object
     private final Connection user;
 
-    private final String userName;
-
-    // The naming handler object responsible for changing a client's screen name
-    private final Names namingHandler;
-
     // Constructor
-    public Commandhandler(Server server, String userName, Connection user) {
+    public Commandhandler(Server server, Connection user) {
         // Initialize the class variables
         this.server = server;
-        this.userName = userName;
         this.user = user;
-        // Initialize the namingHandler variable as an object of the Names class which handles the users name displayed onscreen
-        this.namingHandler = new Names(server, userName);
 
         // Initialize the commands array list and add the HelpCommand and NicknameCommand objects
         commands = new ArrayList<>();
@@ -72,8 +63,8 @@ public class Commandhandler {
                 //Gets the arguments from the input message
                 String[] arguments = getArguments(message, command.numArg);
                 //If there weren't enough arguments it sends out an error message.
-                if (arguments.length - 1 < command.numArg) {
-                    String errorMessage = "The command you wrote requires " + command.numArg + " arguments. " + "You only wrote " + (arguments.length - 1) + ". " + "Write '*help' for more information about the commands.";
+                if (arguments.length - 1 < command.numArg || arguments.length - 1 > command.numArg) {
+                    String errorMessage = "The command you wrote requires " + command.numArg + " arguments. " + "You wrote " + (arguments.length - 1) + ". " + "Write '*help' for more information about the commands.";
                     user.sendMessage(new ServerMessages(errorMessage));
                     break;
                 }
@@ -98,11 +89,6 @@ public class Commandhandler {
     // Get the client's connection handler object
     public Connection getUser() {
         return user;
-    }
-
-    // Get the naming handler object responsible for changing a client's screen name
-    public Names getNamingHandler() {
-        return namingHandler;
     }
 
     // Get the array list

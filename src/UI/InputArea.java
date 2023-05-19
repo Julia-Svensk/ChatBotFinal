@@ -28,7 +28,7 @@ public class InputArea extends JPanel {
 
         // Set up the input text area
         inputArea = new JTextArea();
-        inputArea.setPreferredSize(new Dimension(600, 100));
+        inputArea.setPreferredSize(new Dimension(600, 70));
         inputArea.setBackground(Color.white);
         inputArea.addFocusListener(new FocusListener() {
             @Override
@@ -57,7 +57,7 @@ public class InputArea extends JPanel {
                 sendMessage(inputArea.getText());
             }
         });
-        submitButton.setPreferredSize(new Dimension(200, 100));
+        submitButton.setPreferredSize(new Dimension(200, 70));
         this.add(submitButton);
     }
 

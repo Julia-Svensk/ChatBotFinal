@@ -7,22 +7,22 @@ import Messages.ServerMessages;
 
 public class DisplayNames extends CommandB{
     public DisplayNames() {
-        this.commandName = "Change name";
+        this.commandName = "name";
         this.description = "Changes the name displayed on your screen. Arguments required: (New name)";
         this.numArg = 1;
     }
 
     public void executeCommand(Commandhandler commandhandler, String[] args) {
-        //Gets the server, user and naming-handler objects
+        //Gets the server, user and nameChanger objects
         Server server = commandhandler.getServer();
         Connection user = commandhandler.getUser();
-        Names namingHandler = commandhandler.getNamingHandler();
+        Names nameChanger = new Names();
 
         //Gets the new name from the argument
-        String newName = args[0].trim();
+        String newName = args[1].trim();
 
         //Checking if the new name is valid
-        if (namingHandler.isNameValid(newName)) {
+        if (nameChanger.isNameValid(newName)) {
             String nameChangeInfo = "'" + user.getDisplayName() + "' changed their name to '" + newName + "'";
 
             //Log the info about the name change

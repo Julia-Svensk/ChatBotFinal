@@ -11,8 +11,8 @@ public class MessageInfo extends JPanel {
     private final String senderName;
     private final String message;
     private final boolean isServerMessage;
-    private final Font senderFont = new Font("TimesNewRoman", Font.BOLD, 24);
-    private final Font messageFont = new Font("TimesNewRoman", Font.PLAIN, 20);
+    private final Font senderFont = new Font("SansSerif", Font.BOLD, 24);
+    private final Font messageFont = new Font("SansSerif", Font.PLAIN, 20);
     private final Color serverMessageColor = Color.BLUE;
 
     private JPanel messageContainer;
@@ -43,7 +43,7 @@ public class MessageInfo extends JPanel {
         messageContainer = new JPanel();
 
         // Set the size and appearance of the container
-        setAbsoluteSize(messageContainer, new Dimension(1350, 75));
+        setAbsoluteSize(messageContainer, new Dimension(1000, 75));
         messageContainer.setBackground(Color.LIGHT_GRAY);
         messageContainer.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 
@@ -64,7 +64,7 @@ public class MessageInfo extends JPanel {
         // Create the message label and set its font and size
         messageLabel = new JLabel(this.message);
         messageLabel.setFont(messageFont);
-        setAbsoluteSize(messageLabel, new Dimension(1200 - senderLabelWidth, 75));
+        setAbsoluteSize(messageLabel, new Dimension(975 - senderLabelWidth, 75));
 
         // Add the sender and message labels to the message container
         messageContainer.add(senderLabel);
