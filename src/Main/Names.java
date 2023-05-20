@@ -1,4 +1,4 @@
-package Main;
+/*package Main;
 
 import java.util.Scanner;
 
@@ -42,4 +42,4 @@ public class Names {
 
         return name; // Return the valid name
     }
-}
+}*/

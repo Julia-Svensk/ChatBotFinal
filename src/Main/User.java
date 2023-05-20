@@ -1,18 +1,18 @@
 package Main;
 
-import Messages.*;
+import Messages.DeserializedMessages;
+import Messages.DeserializingMessages;
 import UI.Gui;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 public class User implements Runnable {
     private Socket socket;
-    private String userName;
+    Server server;
 
     private Gui gui;
 
@@ -23,7 +23,7 @@ public class User implements Runnable {
     private PrintWriter out;
 
     //The constructor for creating a new User object.
-    public User(String userName, Socket socket) {
+    public User(Socket socket, Server server) {
         try {
             //Connects to the chat server using the localhost IP address and port number 9999.
             this.socket = socket;
@@ -37,7 +37,7 @@ public class User implements Runnable {
             //Creates a new gui and passes this User object as a parameter.
             gui = new Gui(this);
 
-            this.userName = userName;
+            this.server = server;
 
 
         } catch (IOException e) {
@@ -91,17 +91,5 @@ public class User implements Runnable {
     public void sendMessage(String message) {
         //Sends the message to the server using the output stream.
         out.println(message);
-    }
-
-    //The main method for creating a new User object and starting it as a new thread.
-    public static void main() {
-        try {
-            User user = new User("", new Socket("127.0.0.1", 9999));
-            user.run();
-        } catch(UnknownHostException e) {
-            System.out.println("");
-        } catch(IOException e) {
-            System.out.println("");
-        }
     }
 }

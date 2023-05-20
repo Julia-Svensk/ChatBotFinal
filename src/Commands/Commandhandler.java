@@ -27,7 +27,6 @@ public class Commandhandler {
 
         // Initialize the commands array list and add the HelpCommand and NicknameCommand objects
         commands = new ArrayList<>();
-        commands.add(new Help());
         commands.add(new DisplayNames());
     }
 
@@ -64,7 +63,7 @@ public class Commandhandler {
                 String[] arguments = getArguments(message, command.numArg);
                 //If there weren't enough arguments it sends out an error message.
                 if (arguments.length - 1 < command.numArg || arguments.length - 1 > command.numArg) {
-                    String errorMessage = "The command you wrote requires " + command.numArg + " arguments. " + "You wrote " + (arguments.length - 1) + ". " + "Write '*help' for more information about the commands.";
+                    String errorMessage = "The command you wrote requires " + command.numArg + " arguments. " + "You wrote " + (arguments.length - 1) + ".";
                     user.sendMessage(new ServerMessages(errorMessage));
                     break;
                 }

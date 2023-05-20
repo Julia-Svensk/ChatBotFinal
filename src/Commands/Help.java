@@ -1,9 +1,6 @@
 package Commands;
 
-import Main.Connection;
-import Messages.ServerMessages;
-
-public class Help extends CommandB{
+/*public class Help extends CommandB{
     public Help() {
         this.commandName = "help";
         this.description = "Gives you information about the different commands.";
@@ -28,3 +25,4 @@ public class Help extends CommandB{
     }
 }
 
+*/

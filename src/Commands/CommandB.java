@@ -29,11 +29,11 @@ public abstract class CommandB {
         // Create an array with two elements
         String[] commandInfo = new String[2];
 
-        // Set the first element to the command description
-        commandInfo[0] = description;
-
         // Set the second element to the command prompt
-        commandInfo[1] = PREFIX + commandName;
+        commandInfo[0] = PREFIX + commandName;
+
+        // Set the first element to the command description
+        commandInfo[1] = description;
 
         // Return the array
         return commandInfo;

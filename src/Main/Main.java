@@ -14,7 +14,7 @@ public class Main {
         threadPool.execute(server);
         for (int i =  1; i < 3; i++) {
             try {
-                User user = new User("", new Socket("127.0.0." + i, 9999));
+                User user = new User(new Socket("127.0.0." + i, 9999), server);
                 threadPool.execute(user);
             } catch (UnknownHostException e) {
                 System.out.println("");

@@ -252,3 +252,261 @@
 
 19/00/2023 06:00:34: 'Julia' changed their name to 'Tina'
 
+19/05/2023 06:05:16: The server has started.
+
+19/05/2023 06:05:23: JUlia connected
+
+19/05/2023 06:05:25: Tina connected
+
+19/08/2023 06:08:34: The server has started.
+
+19/08/2023 06:08:41: julia connected
+
+19/08/2023 06:08:43: tina connected
+
+19/19/2023 06:19:50: The server has started.
+
+19/19/2023 06:19:55: j connected
+
+19/19/2023 06:19:56: l connected
+
+19/27/2023 06:27:46: The server has started.
+
+19/27/2023 06:27:51: f connected
+
+19/27/2023 06:27:52: g connected
+
+19/28/2023 06:28:32: The server has started.
+
+19/28/2023 06:28:35: k connected
+
+19/28/2023 06:28:35: j connected
+
+20/28/2023 11:28:29: The server has started.
+
+20/28/2023 11:28:35: Julia connected
+
+20/28/2023 11:28:37: Tina connected
+
+20/30/2023 11:30:48: The server has started.
+
+20/30/2023 11:30:52: julia connected
+
+20/30/2023 11:30:55: tina connected
+
+20/32/2023 11:32:02: The server has started.
+
+20/32/2023 11:32:13: Julia connected
+
+20/32/2023 11:32:15: tina connected
+
+20/33/2023 11:33:21: The server has started.
+
+20/33/2023 11:33:29: hsjshhdjsjjshajshjbdjhsbjhasbd connected
+
+20/33/2023 11:33:31: kajha connected
+
+20/34/2023 11:34:33: The server has started.
+
+20/34/2023 11:34:38: julia connected
+
+20/34/2023 11:34:40: tina connected
+
+20/38/2023 11:38:41: The server has started.
+
+20/38/2023 11:38:45: j connected
+
+20/38/2023 11:38:46: u connected
+
+20/39/2023 11:39:18: The server has started.
+
+20/39/2023 11:39:22: j connected
+
+20/39/2023 11:39:22: k connected
+
+20/40/2023 11:40:19: The server has started.
+
+20/40/2023 11:40:22: j connected
+
+20/40/2023 11:40:23: k connected
+
+20/44/2023 11:44:44: The server has started.
+
+20/44/2023 11:44:49: h connected
+
+20/44/2023 11:44:49: j connected
+
+20/45/2023 11:45:20: The server has started.
+
+20/45/2023 11:45:24: j connected
+
+20/45/2023 11:45:25: k connected
+
+20/49/2023 11:49:00: The server has started.
+
+20/49/2023 11:49:05: j connected
+
+20/49/2023 11:49:06: l connected
+
+20/25/2023 02:25:49: The server has started.
+
+20/25/2023 02:25:55: j connected
+
+20/25/2023 02:25:55: k connected
+
+20/26/2023 02:26:00: The server has started.
+
+20/26/2023 02:26:13: The server has started.
+
+20/28/2023 02:28:56: The server has started.
+
+20/29/2023 02:29:03: J connected
+
+20/29/2023 02:29:04: l connected
+
+20/29/2023 02:29:40: The server has started.
+
+20/29/2023 02:29:45: j connected
+
+20/29/2023 02:29:45: h connected
+
+20/30/2023 02:30:38: The server has started.
+
+20/30/2023 02:30:45: h connected
+
+20/30/2023 02:30:45: j connected
+
+20/31/2023 02:31:43: The server has started.
+
+20/31/2023 02:31:47: hello connected
+
+20/31/2023 02:31:48: j connected
+
+20/32/2023 02:32:40: The server has started.
+
+20/32/2023 02:32:44: k connected
+
+20/32/2023 02:32:44: j connected
+
+20/34/2023 02:34:23: The server has started.
+
+20/34/2023 02:34:27: h connected
+
+20/34/2023 02:34:27: g connected
+
+20/41/2023 02:41:18: The server has started.
+
+20/41/2023 02:41:42: k connected
+
+20/41/2023 02:41:43: l connected
+
+20/48/2023 02:48:06: The server has started.
+
+20/49/2023 02:49:08: The server has started.
+
+20/50/2023 02:50:56: The server has started.
+
+20/51/2023 02:51:02: h connected
+
+20/51/2023 02:51:02: j connected
+
+20/54/2023 02:54:01: The server has started.
+
+20/54/2023 02:54:05: j connected
+
+20/54/2023 02:54:05: h connected
+
+20/56/2023 02:56:15: The server has started.
+
+20/56/2023 02:56:19: h connected
+
+20/56/2023 02:56:20: g connected
+
+20/57/2023 02:57:00: The server has started.
+
+20/57/2023 02:57:17: k connected
+
+20/57/2023 02:57:18: g connected
+
+20/58/2023 02:58:08: The server has started.
+
+20/59/2023 02:59:44: The server has started.
+
+20/59/2023 02:59:56: h connected
+
+20/59/2023 02:59:56: j connected
+
+20/15/2023 03:15:52: The server has started.
+
+20/15/2023 03:15:52: null connected
+
+20/15/2023 03:15:53: null connected
+
+20/16/2023 03:16:08: 'null' changed their name to 'julia'
+
+20/17/2023 03:17:02: The server has started.
+
+20/17/2023 03:17:02: null connected
+
+20/17/2023 03:17:03: null connected
+
+20/21/2023 03:21:01: The server has started.
+
+20/21/2023 03:21:01: null connected
+
+20/21/2023 03:21:02: null connected
+
+20/33/2023 03:33:49: The server has started.
+
+20/33/2023 03:33:49: null connected
+
+20/33/2023 03:33:49: null connected
+
+20/34/2023 03:34:51: The server has started.
+
+20/34/2023 03:34:51: null connected
+
+20/36/2023 03:36:14: The server has started.
+
+20/36/2023 03:36:14: null connected
+
+20/36/2023 03:36:14: null connected
+
+20/37/2023 03:37:12: The server has started.
+
+20/37/2023 03:37:12: null connected
+
+20/37/2023 03:37:13: null connected
+
+20/38/2023 03:38:11: The server has started.
+
+20/38/2023 03:38:11: null connected
+
+20/38/2023 03:38:12: null connected
+
+20/50/2023 03:50:49: The server has started.
+
+20/50/2023 03:50:49:  connected
+
+20/50/2023 03:50:49:  connected
+
+20/51/2023 03:51:42: The server has started.
+
+20/51/2023 03:51:42:  connected
+
+20/51/2023 03:51:42:  connected
+
+20/57/2023 03:57:00: The server has started.
+
+20/57/2023 03:57:00: New user connected
+
+20/57/2023 03:57:00: New user connected
+
+20/57/2023 03:57:23: 'New user' changed their name to 'Julia'
+
+20/59/2023 03:59:34: The server has started.
+
+20/59/2023 03:59:34: New user connected
+
+20/59/2023 03:59:35: New user connected
+

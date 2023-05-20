@@ -18,7 +18,7 @@ public class UserMessages extends MessagesB {
     public String formatMessage() {
 
         //Extracts the display name of the sender from the Connection object
-        String screenName = this.sender.getDisplayName();
+        String screenName = this.sender.getUserName();
 
         //Constructs the message string by separating the sender's screen name and message using the serialization separator
         return "User" + MessagesB.SERIALIZATION_SEPARATOR +
@@ -29,6 +29,6 @@ public class UserMessages extends MessagesB {
 
     //Getter method for the sender's display name
     public String getSenderName() {
-        return sender.getDisplayName();
+        return sender.getUserName();
     }
 }

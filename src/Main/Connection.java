@@ -19,9 +19,10 @@ public class Connection implements Runnable {
     private PrintWriter out;
     private String displayName;
 
-    public Connection(Server server, Socket socket) {
+    public Connection(Server server, Socket socket, String displayName) {
         this.server = server;
         this.socket = socket;
+        this.displayName = displayName;
     }
 
     // Sends a message to the user
@@ -39,13 +40,12 @@ public class Connection implements Runnable {
 
             // Send successful connection message to the user
             sendMessage(new ServerMessages("You have successfully connected to the server."));
+            sendMessage(new ServerMessages("Write *name (your new name) if you want to change your name."));
 
             // Initializes Naming and Command handlers
-            Names namingHandler = new Names();
             Commandhandler commandHandler = new Commandhandler(server, this);
 
             // Get valid username and log user's connection to the server
-            displayName = namingHandler.getValidName();
             server.broadcast(new ServerMessages(displayName + " connected"));
             server.log(displayName + " connected");
 
@@ -90,11 +90,11 @@ public class Connection implements Runnable {
         return in;
     }
 
-    public void setDisplayName(String displayName) {
+    public void setUserName(String displayName) {
         this.displayName = displayName;
     }
 
-    public String getDisplayName() {
+    public String getUserName() {
         return displayName;
     }
 }

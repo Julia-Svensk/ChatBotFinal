@@ -30,12 +30,6 @@ public class Server extends ArrayList<String> implements Runnable {
         log("The server has started.");
     }
 
-    // Main method to run the server
-    public static void main() {
-        Server server = new Server();
-        server.run();
-    }
-
     // Runnable interface's run method
     @Override
     public void run() {
@@ -49,7 +43,7 @@ public class Server extends ArrayList<String> implements Runnable {
                 // Accepts incoming connection requests and creates a socket for them
                 Socket userSocket = serverSocket.accept();
                 // Creates a new connection instance to handle the new connection
-                Connection newConnection = new Connection(this, userSocket);
+                Connection newConnection = new Connection(this, userSocket, "New user");
                 // Adds the new connection to the active connections list
                 activeConnections.add(newConnection);
                 // Assigns a thread from the thread pool to run the Connection instance and starts executing it
@@ -67,7 +61,7 @@ public class Server extends ArrayList<String> implements Runnable {
         // Loops through active connections and sends the message to each of them
         for (Connection connection : activeConnections) {
             // If the connection or display name is null, skips it
-            if (connection == null || connection.getDisplayName() == null) {
+            if (connection == null) {
                 continue;
             }
             connection.sendMessage(message);
