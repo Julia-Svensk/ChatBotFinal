@@ -23,7 +23,7 @@ public class DeserializingMessages {
         //Splits the message using a separator and extracts the length of the username
         String[] messageData = message.split(MessagesB.SERIALIZATION_SEPARATOR, 0);
         int nameLength = Integer.parseInt(messageData[1]);
-/***/
+
         //Calculates the starting index of the username within the message string
         int nameLengthNumDigits = (int)(Math.log10(nameLength) + 1);
         int nameStartIndex = 6 * MessagesB.SERIALIZATION_SEPARATOR.length() + nameLengthNumDigits;

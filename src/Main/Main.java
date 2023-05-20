@@ -8,6 +8,7 @@ import java.util.concurrent.Executors;
 
 public class Main {
     public static void main(String[] args) {
+        //Starts a thread pool for the server and users and starts them as new threads
         ExecutorService threadPool;
         Server server = new Server();
         threadPool = Executors.newCachedThreadPool();

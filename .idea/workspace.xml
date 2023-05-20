@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90513c1d-1bad-40f1-9d0a-93a273e93d44" name="Changes" comment="Moved from other git account">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ServerLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/CommandB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Commandhandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Commandhandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/DisplayNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/DisplayNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Names.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messages/DeserializingMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messages/DeserializingMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Messages/UserMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Messages/UserMessages.java" afterDir="false" />
-    </list>
+    <list default="true" id="90513c1d-1bad-40f1-9d0a-93a273e93d44" name="Changes" comment="Moved from other git account" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +74,7 @@
       <workItem from="1681138677792" duration="1353000" />
       <workItem from="1681559435303" duration="1619000" />
       <workItem from="1683366430452" duration="988000" />
-      <workItem from="1683546245824" duration="91580000" />
+      <workItem from="1683546245824" duration="91881000" />
     </task>
     <task id="LOCAL-00001" summary="Moved from other git account">
       <created>1684187910434</created>
@@ -118,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684512156297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Moved from other git account">
+      <created>1684591648979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684591648979</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
